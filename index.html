@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apoya mi tesis doctoral – María Almonacid · UACh</title>
+<meta name="description" content="Solicitud de apoyo para financiar la tesis doctoral de María Almonacid (Universidad Austral de Chile) sobre los efectos de los microplásticos en peces.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b2a3c;--deep:#0e3a52;--teal:#0f766e;--teal-l:#d7f0ec;--coral:#e8664a;--ink:#16232e;--muted:#4b5b68;--bg:#f3f7f8;--card:#fff;--radius:20px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;background:var(--navy);color:#fff;padding:56px 0 120px}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 80% at 85% 10%,rgba(15,118,110,.55),transparent 70%),radial-gradient(50% 60% at 0% 100%,rgba(14,58,82,.9),transparent 70%)}
+.hero .wrap{position:relative;z-index:2}
+.pill{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.02em;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);padding:6px 14px;border-radius:999px}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--coral);display:inline-block}
+h1{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:clamp(36px,6vw,60px);line-height:1.08;margin:22px 0 16px;max-width:15ch}
+.lead{font-size:clamp(17px,2.2vw,20px);color:#d5e6ec;max-width:56ch;margin:0 0 30px}
+.lead b{color:#fff}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.particles span{position:absolute;border-radius:3px;opacity:.75;animation:float 14s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-18px) rotate(40deg)}}
+.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:90px;z-index:1}
+
+/* BOTONES */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 22px;border-radius:14px;font:600 16px/1.2 Inter,system-ui,sans-serif;text-decoration:none;border:0;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible{outline:3px solid #ffd27a;outline-offset:3px}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-coral{background:var(--coral);color:#fff;box-shadow:0 8px 20px -8px rgba(232,102,74,.7)}
+.btn-coral:hover{background:#d4553a}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.35)}
+.btn-teal{background:var(--teal);color:#fff}
+.btn-teal:hover{background:#0b5f58}
+.btn-outline{background:#fff;color:var(--deep);border:2px solid #c9dbe2}
+.btn-outline:hover{border-color:var(--deep)}
+.btn-ig{background:linear-gradient(135deg,#4f5bd5,#962fbf 50%,#d62976);color:#fff}
+.btn-block{width:100%;justify-content:flex-start;text-align:left}
+.btn small{display:block;font-weight:400;font-size:13px;opacity:.85;word-break:break-all}
+
+/* SECCIONES */
+section{padding:56px 0 8px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin:0 0 8px}
+h2{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:clamp(28px,4vw,38px);line-height:1.15;margin:0 0 18px}
+.card{background:var(--card);border-radius:var(--radius);padding:30px 26px;box-shadow:0 1px 2px rgba(11,42,60,.06),0 10px 30px -18px rgba(11,42,60,.25)}
+.msg{margin-top:-70px;position:relative;z-index:3}
+.msg p{font-size:18px;margin:0 0 12px}
+.msg .sig{display:flex;align-items:center;gap:14px;margin-top:20px;padding-top:20px;border-top:1px solid #e3ecef}
+.avatar{width:48px;height:48px;border-radius:50%;background:var(--teal-l);color:var(--teal);display:grid;place-items:center;font-weight:700;font-size:18px}
+.sig b{display:block}
+.sig span{color:var(--muted);font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.feature{display:flex;flex-direction:column;gap:14px}
+.feature h3{font-size:21px;margin:0}
+.feature p{margin:0;color:var(--muted)}
+.icon{width:52px;height:52px;border-radius:14px;display:grid;place-items:center}
+.icon svg{width:26px;height:26px}
+.icon.coral{background:#fde6e0;color:var(--coral)}
+.icon.teal{background:var(--teal-l);color:var(--teal)}
+.icon.ig{background:linear-gradient(135deg,#eef0ff,#fbe6f1);color:#962fbf}
+.stack{display:flex;flex-direction:column;gap:10px;margin-top:auto}
+.lab{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;align-items:center}
+.lab .who{color:var(--muted);margin:0 0 18px}
+.lab .who b{color:var(--ink)}
+.qr-teaser{text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:14px;padding:22px;border-radius:18px;background:linear-gradient(135deg,#f3f4ff,#fdf0f7)}
+.qr-teaser .qr{width:150px;height:150px;border-radius:12px;padding:8px;background:#fff;box-shadow:0 6px 16px -8px rgba(150,47,191,.5)}
+.handle{font-weight:600;color:#7a2fa0;font-size:15px}
+.thanks{text-align:center;padding:64px 20px 24px}
+.thanks h2{margin-bottom:8px}
+.thanks p{color:var(--muted);margin:0}
+footer{text-align:center;color:var(--muted);font-size:14px;padding:24px 20px 40px}
+
+/* MODAL */
+dialog{border:0;border-radius:24px;padding:0;max-width:360px;width:calc(100% - 32px);box-shadow:0 30px 60px -20px rgba(0,0,0,.45)}
+dialog::backdrop{background:rgba(11,42,60,.6);backdrop-filter:blur(3px)}
+.modal{padding:28px 24px 24px;text-align:center}
+.modal h3{margin:0 0 4px;font-size:20px}
+.modal p{margin:0 0 18px;color:var(--muted);font-size:15px}
+.modal .qr{width:240px;height:240px;margin:0 auto 14px;display:block;border-radius:16px;padding:10px;background:#fff;border:3px solid transparent;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(135deg,#4f5bd5,#962fbf,#d62976) border-box}
+.close{position:absolute;top:10px;right:10px;width:44px;height:44px;border-radius:50%;border:0;background:#f0f3f5;cursor:pointer;display:grid;place-items:center}
+.close svg{width:18px;height:18px}
+.modal .btn{width:100%;margin-top:6px}
+
+@media (max-width:720px){.lab{grid-template-columns:1fr}.hero{padding:40px 0 110px}.card{padding:24px 20px}}
+@media (prefers-reduced-motion:reduce){.particles span{animation:none}.btn{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="igGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f5bd5"/><stop offset=".5" stop-color="#962fbf"/><stop offset="1" stop-color="#d62976"/></linearGradient><symbol id="qrIg" viewBox="0 0 41 41"><rect width="41" height="41" fill="#fff"/><path fill="url(#igGrad)" d="M2 2h7v1h-7zM12 2h2v1h-2zM15 2h1v1h-1zM17 2h1v1h-1zM19 2h1v1h-1zM21 2h3v1h-3zM28 2h3v1h-3zM32 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM13 3h1v1h-1zM16 3h2v1h-2zM19 3h1v1h-1zM22 3h5v1h-5zM32 3h1v1h-1zM38 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM10 4h1v1h-1zM12 4h1v1h-1zM15 4h2v1h-2zM18 4h1v1h-1zM20 4h1v1h-1zM22 4h3v1h-3zM26 4h1v1h-1zM28 4h1v1h-1zM32 4h1v1h-1zM34 4h3v1h-3zM38 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM11 5h3v1h-3zM17 5h1v1h-1zM20 5h1v1h-1zM27 5h2v1h-2zM30 5h1v1h-1zM32 5h1v1h-1zM34 5h3v1h-3zM38 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM10 6h6v1h-6zM18 6h1v1h-1zM20 6h2v1h-2zM23 6h1v1h-1zM25 6h1v1h-1zM28 6h2v1h-2zM32 6h1v1h-1zM34 6h3v1h-3zM38 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM10 7h1v1h-1zM19 7h3v1h-3zM24 7h1v1h-1zM30 7h1v1h-1zM32 7h1v1h-1zM38 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h1v1h-1zM22 8h1v1h-1zM24 8h1v1h-1zM26 8h1v1h-1zM28 8h1v1h-1zM30 8h1v1h-1zM32 8h7v1h-7zM11 9h2v1h-2zM14 9h1v1h-1zM19 9h1v1h-1zM21 9h1v1h-1zM23 9h5v1h-5zM3 10h1v1h-1zM6 10h1v1h-1zM8 10h1v1h-1zM10 10h2v1h-2zM13 10h1v1h-1zM18 10h4v1h-4zM23 10h2v1h-2zM26 10h2v1h-2zM29 10h3v1h-3zM33 10h2v1h-2zM36 10h1v1h-1zM2 11h2v1h-2zM10 11h1v1h-1zM12 11h1v1h-1zM14 11h1v1h-1zM16 11h8v1h-8zM25 11h1v1h-1zM28 11h1v1h-1zM33 11h3v1h-3zM2 12h3v1h-3zM6 12h4v1h-4zM12 12h2v1h-2zM17 12h1v1h-1zM20 12h1v1h-1zM22 12h2v1h-2zM25 12h5v1h-5zM31 12h1v1h-1zM36 12h1v1h-1zM2 13h1v1h-1zM6 13h2v1h-2zM9 13h6v1h-6zM19 13h3v1h-3zM23 13h2v1h-2zM26 13h1v1h-1zM28 13h4v1h-4zM34 13h1v1h-1zM36 13h3v1h-3zM2 14h1v1h-1zM4 14h1v1h-1zM7 14h2v1h-2zM10 14h6v1h-6zM18 14h3v1h-3zM23 14h4v1h-4zM31 14h2v1h-2zM36 14h2v1h-2zM3 15h1v1h-1zM7 15h1v1h-1zM10 15h1v1h-1zM12 15h1v1h-1zM16 15h1v1h-1zM18 15h1v1h-1zM20 15h2v1h-2zM25 15h3v1h-3zM29 15h3v1h-3zM34 15h1v1h-1zM36 15h2v1h-2zM2 16h1v1h-1zM4 16h1v1h-1zM7 16h4v1h-4zM13 16h1v1h-1zM15 16h2v1h-2zM20 16h8v1h-8zM29 16h1v1h-1zM31 16h1v1h-1zM33 16h4v1h-4zM2 17h3v1h-3zM7 17h1v1h-1zM10 17h1v1h-1zM12 17h1v1h-1zM14 17h2v1h-2zM18 17h3v1h-3zM22 17h2v1h-2zM26 17h1v1h-1zM28 17h2v1h-2zM31 17h2v1h-2zM36 17h1v1h-1zM38 17h1v1h-1zM2 18h1v1h-1zM5 18h1v1h-1zM8 18h2v1h-2zM11 18h2v1h-2zM15 18h2v1h-2zM20 18h1v1h-1zM22 18h1v1h-1zM29 18h1v1h-1zM31 18h2v1h-2zM35 18h2v1h-2zM38 18h1v1h-1zM2 19h1v1h-1zM5 19h1v1h-1zM7 19h1v1h-1zM11 19h4v1h-4zM17 19h2v1h-2zM23 19h2v1h-2zM26 19h1v1h-1zM28 19h2v1h-2zM34 19h2v1h-2zM3 20h2v1h-2zM8 20h1v1h-1zM10 20h1v1h-1zM13 20h1v1h-1zM16 20h2v1h-2zM19 20h1v1h-1zM21 20h6v1h-6zM28 20h2v1h-2zM31 20h1v1h-1zM33 20h4v1h-4zM4 21h3v1h-3zM9 21h2v1h-2zM14 21h1v1h-1zM23 21h1v1h-1zM25 21h1v1h-1zM29 21h1v1h-1zM31 21h3v1h-3zM36 21h3v1h-3zM8 22h1v1h-1zM11 22h1v1h-1zM14 22h1v1h-1zM16 22h4v1h-4zM21 22h4v1h-4zM29 22h1v1h-1zM31 22h2v1h-2zM36 22h1v1h-1zM38 22h1v1h-1zM2 23h4v1h-4zM11 23h1v1h-1zM13 23h1v1h-1zM15 23h1v1h-1zM18 23h1v1h-1zM20 23h1v1h-1zM25 23h1v1h-1zM27 23h3v1h-3zM34 23h4v1h-4zM2 24h2v1h-2zM5 24h2v1h-2zM8 24h1v1h-1zM10 24h1v1h-1zM12 24h3v1h-3zM16 24h2v1h-2zM20 24h1v1h-1zM23 24h4v1h-4zM29 24h2v1h-2zM32 24h1v1h-1zM36 24h1v1h-1zM2 25h1v1h-1zM4 25h3v1h-3zM11 25h2v1h-2zM14 25h3v1h-3zM18 25h3v1h-3zM23 25h1v1h-1zM28 25h1v1h-1zM30 25h1v1h-1zM32 25h2v1h-2zM36 25h3v1h-3zM3 26h2v1h-2zM6 26h3v1h-3zM11 26h1v1h-1zM13 26h2v1h-2zM19 26h1v1h-1zM22 26h3v1h-3zM26 26h4v1h-4zM32 26h2v1h-2zM36 26h2v1h-2zM2 27h2v1h-2zM6 27h2v1h-2zM9 27h2v1h-2zM12 27h1v1h-1zM14 27h3v1h-3zM21 27h1v1h-1zM25 27h3v1h-3zM30 27h1v1h-1zM32 27h1v1h-1zM34 27h1v1h-1zM4 28h1v1h-1zM6 28h1v1h-1zM8 28h2v1h-2zM11 28h1v1h-1zM13 28h5v1h-5zM19 28h1v1h-1zM21 28h8v1h-8zM30 28h2v1h-2zM33 28h2v1h-2zM36 28h2v1h-2zM4 29h1v1h-1zM6 29h2v1h-2zM11 29h1v1h-1zM13 29h5v1h-5zM21 29h3v1h-3zM25 29h2v1h-2zM28 29h1v1h-1zM32 29h1v1h-1zM36 29h3v1h-3zM2 30h2v1h-2zM5 30h1v1h-1zM7 30h2v1h-2zM11 30h2v1h-2zM17 30h2v1h-2zM21 30h1v1h-1zM23 30h3v1h-3zM29 30h6v1h-6zM36 30h1v1h-1zM38 30h1v1h-1zM10 31h1v1h-1zM12 31h1v1h-1zM14 31h2v1h-2zM17 31h1v1h-1zM19 31h7v1h-7zM30 31h1v1h-1zM34 31h2v1h-2zM37 31h1v1h-1zM2 32h7v1h-7zM11 32h2v1h-2zM15 32h3v1h-3zM19 32h2v1h-2zM22 32h1v1h-1zM25 32h4v1h-4zM30 32h1v1h-1zM32 32h1v1h-1zM34 32h3v1h-3zM2 33h1v1h-1zM8 33h1v1h-1zM13 33h1v1h-1zM16 33h2v1h-2zM19 33h1v1h-1zM22 33h1v1h-1zM24 33h1v1h-1zM26 33h1v1h-1zM28 33h1v1h-1zM30 33h1v1h-1zM34 33h1v1h-1zM36 33h3v1h-3zM2 34h1v1h-1zM4 34h3v1h-3zM8 34h1v1h-1zM10 34h2v1h-2zM13 34h3v1h-3zM19 34h1v1h-1zM24 34h1v1h-1zM26 34h1v1h-1zM30 34h8v1h-8zM2 35h1v1h-1zM4 35h3v1h-3zM8 35h1v1h-1zM11 35h1v1h-1zM15 35h2v1h-2zM19 35h4v1h-4zM27 35h4v1h-4zM32 35h2v1h-2zM37 35h1v1h-1zM2 36h1v1h-1zM4 36h3v1h-3zM8 36h1v1h-1zM11 36h1v1h-1zM14 36h1v1h-1zM19 36h1v1h-1zM22 36h1v1h-1zM24 36h1v1h-1zM28 36h1v1h-1zM32 36h2v1h-2zM36 36h2v1h-2zM2 37h1v1h-1zM8 37h1v1h-1zM10 37h2v1h-2zM13 37h2v1h-2zM17 37h2v1h-2zM23 37h2v1h-2zM26 37h1v1h-1zM28 37h2v1h-2zM31 37h1v1h-1zM33 37h1v1h-1zM36 37h2v1h-2zM2 38h7v1h-7zM11 38h1v1h-1zM14 38h1v1h-1zM17 38h7v1h-7zM25 38h2v1h-2zM29 38h1v1h-1zM31 38h3v1h-3zM36 38h3v1h-3z"/></symbol></defs></svg>
+
+<header class="hero">
+  <div class="particles" aria-hidden="true">
+    <span style="left:8%;top:22%;width:10px;height:7px;background:#e8664a"></span>
+    <span style="left:18%;top:70%;width:6px;height:6px;background:#7dd3c8;animation-delay:-3s"></span>
+    <span style="left:72%;top:18%;width:8px;height:5px;background:#ffd27a;animation-delay:-6s"></span>
+    <span style="left:86%;top:55%;width:11px;height:6px;background:#e8664a;animation-delay:-2s"></span>
+    <span style="left:60%;top:75%;width:5px;height:9px;background:#7dd3c8;animation-delay:-8s"></span>
+    <span style="left:40%;top:12%;width:6px;height:4px;background:#b9a6ff;animation-delay:-5s"></span>
+  </div>
+  <div class="wrap">
+    <span class="pill"><i></i> Tesis doctoral · Universidad Austral de Chile</span>
+    <h1>Ayúdame a financiar mi tesis doctoral</h1>
+    <p class="lead">Investigo los <b>efectos de los microplásticos en peces</b>: cómo su ingesta y acumulación en el tracto gastrointestinal afecta su salud. Tu aporte hace posible esta investigación.</p>
+    <div class="hero-actions">
+      <a class="btn btn-coral" href="#colabora">Quiero colaborar</a>
+      <a class="btn btn-ghost" href="#laboratorio">Conoce el laboratorio</a>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C 240 10 480 90 720 50 C 960 10 1200 80 1440 40 L1440 90 L0 90 Z" fill="#f3f7f8"/></svg>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="card msg">
+      <p>Hola, soy <b>María Almonacid</b>, estudiante de doctorado de la Universidad Austral de Chile.</p>
+      <p>Busco apoyo para financiar mi tesis doctoral sobre los efectos de los microplásticos en peces. Cualquier aporte o colaboración es muy bienvenido.</p>
+      <div class="sig">
+        <div class="avatar" aria-hidden="true">MA</div>
+        <div><b>María Almonacid</b><span>Doctoranda · UACh</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="colabora">
+    <div class="wrap">
+      <p class="eyebrow">Cómo apoyar</p>
+      <h2>Formas de colaborar</h2>
+      <div class="grid">
+        <div class="card feature">
+          <div class="icon coral" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+          <h3>Colabora a través de CIC Ngen Ko</h3>
+          <p>Puedes realizar tu aporte a través de la corporación CIC Ngen Ko.</p>
+          <div class="stack">
+            <a class="btn btn-coral btn-block" href="https://www.cicngenko.cl">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+              <span>Ir a CIC Ngen Ko<small>www.cicngenko.cl</small></span>
+            </a>
+          </div>
+        </div>
+        <div class="card feature">
+          <div class="icon teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></div>
+          <h3>Contáctame directamente</h3>
+          <p>Escríbeme o llámame para conversar sobre cómo colaborar.</p>
+          <div class="stack">
+            <a class="btn btn-teal btn-block" href="mailto:maria.almonacid02@alumnos.uach.cl?subject=Apoyo%20tesis%20doctoral">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+              <span>Enviar correo<small>maria.almonacid02@alumnos.uach.cl</small></span>
+            </a>
+            <a class="btn btn-outline btn-block" href="mailto:cicngenko@gmail.com?subject=Apoyo%20tesis%20doctoral%20-%20Mar%C3%ADa%20Almonacid">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+              <span>Correo CIC Ngen Ko<small>cicngenko@gmail.com</small></span>
+            </a>
+            <a class="btn btn-outline btn-block" href="https://wa.me/56961546514">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+              <span>WhatsApp<small>+56 9 6154 6514</small></span>
+            </a>
+            <a class="btn btn-outline btn-block" href="tel:+56961546514">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+              <span>Llamar<small>+56 9 6154 6514</small></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="laboratorio">
+    <div class="wrap">
+      <div class="card lab">
+        <div>
+          <p class="eyebrow">Dónde se hace la investigación</p>
+          <h2>Laboratorio de Microbiología Molecular</h2>
+          <p class="who">Dirigido por la <b>Dra. Patricia Águila</b>, profesora patrocinante de esta tesis. Sigue nuestro trabajo en Instagram.</p>
+          <div class="stack" style="max-width:380px">
+            <button class="btn btn-ig btn-block" type="button" id="openIg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              <span>Ver código QR de Instagram<small>@lab.micromolecular.uach</small></span>
+            </button>
+            <a class="btn btn-outline btn-block" href="mailto:patricia.aguila@uach.cl">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+              <span>Escribir a la Dra. Águila<small>patricia.aguila@uach.cl</small></span>
+            </a>
+          </div>
+        </div>
+        <a class="qr-teaser" href="https://www.instagram.com/lab.micromolecular.uach/" aria-label="Abrir Instagram del laboratorio">
+          <svg class="qr" viewBox="0 0 41 41" role="img" aria-label="Código QR del Instagram @lab.micromolecular.uach"><use href="#qrIg"/></svg>
+          <span class="handle">@lab.micromolecular.uach</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap thanks">
+    <h2>¡Muchas gracias!</h2>
+    <p>Cada aporte acerca esta investigación a responder cómo los microplásticos afectan a los peces.</p>
+  </div>
+</main>
+
+<footer>María Almonacid · Tesis doctoral · Universidad Austral de Chile</footer>
+
+<dialog id="igModal" aria-labelledby="igTitle">
+  <div class="modal">
+    <button class="close" type="button" id="closeIg" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    <h3 id="igTitle">Laboratorio de Microbiología Molecular</h3>
+    <p>Escanea con tu cámara o toca el botón</p>
+    <svg class="qr" viewBox="0 0 41 41" role="img" aria-label="Código QR del Instagram @lab.micromolecular.uach"><use href="#qrIg"/></svg>
+    <p class="handle" style="margin-bottom:14px">@lab.micromolecular.uach</p>
+    <a class="btn btn-ig" href="https://www.instagram.com/lab.micromolecular.uach/">Abrir Instagram</a>
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var dlg=document.getElementById('igModal');
+  var openBtn=document.getElementById('openIg');
+  var closeBtn=document.getElementById('closeIg');
+  openBtn.addEventListener('click',function(){
+    if(typeof dlg.showModal==='function'){dlg.showModal();}
+    else{window.location.href='https://www.instagram.com/lab.micromolecular.uach/';}
+  });
+  closeBtn.addEventListener('click',function(){dlg.close();});
+  dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close();});
+})();
+</script>
+</body>
+</html>
