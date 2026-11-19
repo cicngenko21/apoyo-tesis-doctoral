@@ -89,12 +89,36 @@ dialog::backdrop{background:rgba(11,42,60,.6);backdrop-filter:blur(3px)}
 .close svg{width:18px;height:18px}
 .modal .btn{width:100%;margin-top:6px}
 
+
+/* TRABAJO */
+.paper h2{font-size:clamp(24px,3.4vw,32px)}
+.authors{margin:0 0 6px;font-weight:500}
+.authors sup{font-size:11px;color:var(--teal);font-weight:700}
+.affil{margin:0 0 20px;padding:0;list-style:none;font-size:14px;color:var(--muted)}
+.affil li{margin:2px 0}
+.affil sup{color:var(--teal);font-weight:700;margin-right:4px}
+.abstract p{font-size:16.5px;margin:0 0 12px;text-align:justify;hyphens:auto}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--deep);background:#e6eef2;padding:4px 12px;border-radius:999px;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;align-items:center}
+.chips b{font-size:14px;margin-right:4px}
+.chip{font-size:13px;font-weight:600;color:var(--teal);background:var(--teal-l);padding:4px 12px;border-radius:999px}
+details.more summary{cursor:pointer;font-weight:600;color:var(--teal);list-style:none;display:inline-flex;align-items:center;gap:8px;min-height:44px}
+details.more summary::-webkit-details-marker{display:none}
+details.more summary::before{content:"+";display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--teal-l);font-weight:700}
+details.more[open] summary::before{content:"–"}
+.btn-cic{background:linear-gradient(135deg,#f59e0b,#ef5a3c 50%,#e11d5a);color:#fff}
+.refs ol{margin:8px 0 0;padding-left:22px}
+.refs li{font-size:14.5px;line-height:1.55;margin:0 0 10px;color:#2c3a45;padding-left:4px}
+.refs a{color:var(--teal);word-break:break-all}
+.modal .qr.cic{background:linear-gradient(#fff,#fff) padding-box,linear-gradient(135deg,#f59e0b,#ef5a3c,#e11d5a) border-box}
+.handle.cic{color:#c2410c}
+
 @media (max-width:720px){.lab{grid-template-columns:1fr}.hero{padding:40px 0 110px}.card{padding:24px 20px}}
 @media (prefers-reduced-motion:reduce){.particles span{animation:none}.btn{transition:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="igGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f5bd5"/><stop offset=".5" stop-color="#962fbf"/><stop offset="1" stop-color="#d62976"/></linearGradient><symbol id="qrIg" viewBox="0 0 41 41"><rect width="41" height="41" fill="#fff"/><path fill="url(#igGrad)" d="M2 2h7v1h-7zM12 2h2v1h-2zM15 2h1v1h-1zM17 2h1v1h-1zM19 2h1v1h-1zM21 2h3v1h-3zM28 2h3v1h-3zM32 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM13 3h1v1h-1zM16 3h2v1h-2zM19 3h1v1h-1zM22 3h5v1h-5zM32 3h1v1h-1zM38 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM10 4h1v1h-1zM12 4h1v1h-1zM15 4h2v1h-2zM18 4h1v1h-1zM20 4h1v1h-1zM22 4h3v1h-3zM26 4h1v1h-1zM28 4h1v1h-1zM32 4h1v1h-1zM34 4h3v1h-3zM38 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM11 5h3v1h-3zM17 5h1v1h-1zM20 5h1v1h-1zM27 5h2v1h-2zM30 5h1v1h-1zM32 5h1v1h-1zM34 5h3v1h-3zM38 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM10 6h6v1h-6zM18 6h1v1h-1zM20 6h2v1h-2zM23 6h1v1h-1zM25 6h1v1h-1zM28 6h2v1h-2zM32 6h1v1h-1zM34 6h3v1h-3zM38 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM10 7h1v1h-1zM19 7h3v1h-3zM24 7h1v1h-1zM30 7h1v1h-1zM32 7h1v1h-1zM38 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h1v1h-1zM22 8h1v1h-1zM24 8h1v1h-1zM26 8h1v1h-1zM28 8h1v1h-1zM30 8h1v1h-1zM32 8h7v1h-7zM11 9h2v1h-2zM14 9h1v1h-1zM19 9h1v1h-1zM21 9h1v1h-1zM23 9h5v1h-5zM3 10h1v1h-1zM6 10h1v1h-1zM8 10h1v1h-1zM10 10h2v1h-2zM13 10h1v1h-1zM18 10h4v1h-4zM23 10h2v1h-2zM26 10h2v1h-2zM29 10h3v1h-3zM33 10h2v1h-2zM36 10h1v1h-1zM2 11h2v1h-2zM10 11h1v1h-1zM12 11h1v1h-1zM14 11h1v1h-1zM16 11h8v1h-8zM25 11h1v1h-1zM28 11h1v1h-1zM33 11h3v1h-3zM2 12h3v1h-3zM6 12h4v1h-4zM12 12h2v1h-2zM17 12h1v1h-1zM20 12h1v1h-1zM22 12h2v1h-2zM25 12h5v1h-5zM31 12h1v1h-1zM36 12h1v1h-1zM2 13h1v1h-1zM6 13h2v1h-2zM9 13h6v1h-6zM19 13h3v1h-3zM23 13h2v1h-2zM26 13h1v1h-1zM28 13h4v1h-4zM34 13h1v1h-1zM36 13h3v1h-3zM2 14h1v1h-1zM4 14h1v1h-1zM7 14h2v1h-2zM10 14h6v1h-6zM18 14h3v1h-3zM23 14h4v1h-4zM31 14h2v1h-2zM36 14h2v1h-2zM3 15h1v1h-1zM7 15h1v1h-1zM10 15h1v1h-1zM12 15h1v1h-1zM16 15h1v1h-1zM18 15h1v1h-1zM20 15h2v1h-2zM25 15h3v1h-3zM29 15h3v1h-3zM34 15h1v1h-1zM36 15h2v1h-2zM2 16h1v1h-1zM4 16h1v1h-1zM7 16h4v1h-4zM13 16h1v1h-1zM15 16h2v1h-2zM20 16h8v1h-8zM29 16h1v1h-1zM31 16h1v1h-1zM33 16h4v1h-4zM2 17h3v1h-3zM7 17h1v1h-1zM10 17h1v1h-1zM12 17h1v1h-1zM14 17h2v1h-2zM18 17h3v1h-3zM22 17h2v1h-2zM26 17h1v1h-1zM28 17h2v1h-2zM31 17h2v1h-2zM36 17h1v1h-1zM38 17h1v1h-1zM2 18h1v1h-1zM5 18h1v1h-1zM8 18h2v1h-2zM11 18h2v1h-2zM15 18h2v1h-2zM20 18h1v1h-1zM22 18h1v1h-1zM29 18h1v1h-1zM31 18h2v1h-2zM35 18h2v1h-2zM38 18h1v1h-1zM2 19h1v1h-1zM5 19h1v1h-1zM7 19h1v1h-1zM11 19h4v1h-4zM17 19h2v1h-2zM23 19h2v1h-2zM26 19h1v1h-1zM28 19h2v1h-2zM34 19h2v1h-2zM3 20h2v1h-2zM8 20h1v1h-1zM10 20h1v1h-1zM13 20h1v1h-1zM16 20h2v1h-2zM19 20h1v1h-1zM21 20h6v1h-6zM28 20h2v1h-2zM31 20h1v1h-1zM33 20h4v1h-4zM4 21h3v1h-3zM9 21h2v1h-2zM14 21h1v1h-1zM23 21h1v1h-1zM25 21h1v1h-1zM29 21h1v1h-1zM31 21h3v1h-3zM36 21h3v1h-3zM8 22h1v1h-1zM11 22h1v1h-1zM14 22h1v1h-1zM16 22h4v1h-4zM21 22h4v1h-4zM29 22h1v1h-1zM31 22h2v1h-2zM36 22h1v1h-1zM38 22h1v1h-1zM2 23h4v1h-4zM11 23h1v1h-1zM13 23h1v1h-1zM15 23h1v1h-1zM18 23h1v1h-1zM20 23h1v1h-1zM25 23h1v1h-1zM27 23h3v1h-3zM34 23h4v1h-4zM2 24h2v1h-2zM5 24h2v1h-2zM8 24h1v1h-1zM10 24h1v1h-1zM12 24h3v1h-3zM16 24h2v1h-2zM20 24h1v1h-1zM23 24h4v1h-4zM29 24h2v1h-2zM32 24h1v1h-1zM36 24h1v1h-1zM2 25h1v1h-1zM4 25h3v1h-3zM11 25h2v1h-2zM14 25h3v1h-3zM18 25h3v1h-3zM23 25h1v1h-1zM28 25h1v1h-1zM30 25h1v1h-1zM32 25h2v1h-2zM36 25h3v1h-3zM3 26h2v1h-2zM6 26h3v1h-3zM11 26h1v1h-1zM13 26h2v1h-2zM19 26h1v1h-1zM22 26h3v1h-3zM26 26h4v1h-4zM32 26h2v1h-2zM36 26h2v1h-2zM2 27h2v1h-2zM6 27h2v1h-2zM9 27h2v1h-2zM12 27h1v1h-1zM14 27h3v1h-3zM21 27h1v1h-1zM25 27h3v1h-3zM30 27h1v1h-1zM32 27h1v1h-1zM34 27h1v1h-1zM4 28h1v1h-1zM6 28h1v1h-1zM8 28h2v1h-2zM11 28h1v1h-1zM13 28h5v1h-5zM19 28h1v1h-1zM21 28h8v1h-8zM30 28h2v1h-2zM33 28h2v1h-2zM36 28h2v1h-2zM4 29h1v1h-1zM6 29h2v1h-2zM11 29h1v1h-1zM13 29h5v1h-5zM21 29h3v1h-3zM25 29h2v1h-2zM28 29h1v1h-1zM32 29h1v1h-1zM36 29h3v1h-3zM2 30h2v1h-2zM5 30h1v1h-1zM7 30h2v1h-2zM11 30h2v1h-2zM17 30h2v1h-2zM21 30h1v1h-1zM23 30h3v1h-3zM29 30h6v1h-6zM36 30h1v1h-1zM38 30h1v1h-1zM10 31h1v1h-1zM12 31h1v1h-1zM14 31h2v1h-2zM17 31h1v1h-1zM19 31h7v1h-7zM30 31h1v1h-1zM34 31h2v1h-2zM37 31h1v1h-1zM2 32h7v1h-7zM11 32h2v1h-2zM15 32h3v1h-3zM19 32h2v1h-2zM22 32h1v1h-1zM25 32h4v1h-4zM30 32h1v1h-1zM32 32h1v1h-1zM34 32h3v1h-3zM2 33h1v1h-1zM8 33h1v1h-1zM13 33h1v1h-1zM16 33h2v1h-2zM19 33h1v1h-1zM22 33h1v1h-1zM24 33h1v1h-1zM26 33h1v1h-1zM28 33h1v1h-1zM30 33h1v1h-1zM34 33h1v1h-1zM36 33h3v1h-3zM2 34h1v1h-1zM4 34h3v1h-3zM8 34h1v1h-1zM10 34h2v1h-2zM13 34h3v1h-3zM19 34h1v1h-1zM24 34h1v1h-1zM26 34h1v1h-1zM30 34h8v1h-8zM2 35h1v1h-1zM4 35h3v1h-3zM8 35h1v1h-1zM11 35h1v1h-1zM15 35h2v1h-2zM19 35h4v1h-4zM27 35h4v1h-4zM32 35h2v1h-2zM37 35h1v1h-1zM2 36h1v1h-1zM4 36h3v1h-3zM8 36h1v1h-1zM11 36h1v1h-1zM14 36h1v1h-1zM19 36h1v1h-1zM22 36h1v1h-1zM24 36h1v1h-1zM28 36h1v1h-1zM32 36h2v1h-2zM36 36h2v1h-2zM2 37h1v1h-1zM8 37h1v1h-1zM10 37h2v1h-2zM13 37h2v1h-2zM17 37h2v1h-2zM23 37h2v1h-2zM26 37h1v1h-1zM28 37h2v1h-2zM31 37h1v1h-1zM33 37h1v1h-1zM36 37h2v1h-2zM2 38h7v1h-7zM11 38h1v1h-1zM14 38h1v1h-1zM17 38h7v1h-7zM25 38h2v1h-2zM29 38h1v1h-1zM31 38h3v1h-3zM36 38h3v1h-3z"/></symbol></defs></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="igGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f5bd5"/><stop offset=".5" stop-color="#962fbf"/><stop offset="1" stop-color="#d62976"/></linearGradient><symbol id="qrIg" viewBox="0 0 41 41"><rect width="41" height="41" fill="#fff"/><path fill="url(#igGrad)" d="M2 2h7v1h-7zM12 2h2v1h-2zM15 2h1v1h-1zM17 2h1v1h-1zM19 2h1v1h-1zM21 2h3v1h-3zM28 2h3v1h-3zM32 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM13 3h1v1h-1zM16 3h2v1h-2zM19 3h1v1h-1zM22 3h5v1h-5zM32 3h1v1h-1zM38 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM10 4h1v1h-1zM12 4h1v1h-1zM15 4h2v1h-2zM18 4h1v1h-1zM20 4h1v1h-1zM22 4h3v1h-3zM26 4h1v1h-1zM28 4h1v1h-1zM32 4h1v1h-1zM34 4h3v1h-3zM38 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM11 5h3v1h-3zM17 5h1v1h-1zM20 5h1v1h-1zM27 5h2v1h-2zM30 5h1v1h-1zM32 5h1v1h-1zM34 5h3v1h-3zM38 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM10 6h6v1h-6zM18 6h1v1h-1zM20 6h2v1h-2zM23 6h1v1h-1zM25 6h1v1h-1zM28 6h2v1h-2zM32 6h1v1h-1zM34 6h3v1h-3zM38 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM10 7h1v1h-1zM19 7h3v1h-3zM24 7h1v1h-1zM30 7h1v1h-1zM32 7h1v1h-1zM38 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h1v1h-1zM22 8h1v1h-1zM24 8h1v1h-1zM26 8h1v1h-1zM28 8h1v1h-1zM30 8h1v1h-1zM32 8h7v1h-7zM11 9h2v1h-2zM14 9h1v1h-1zM19 9h1v1h-1zM21 9h1v1h-1zM23 9h5v1h-5zM3 10h1v1h-1zM6 10h1v1h-1zM8 10h1v1h-1zM10 10h2v1h-2zM13 10h1v1h-1zM18 10h4v1h-4zM23 10h2v1h-2zM26 10h2v1h-2zM29 10h3v1h-3zM33 10h2v1h-2zM36 10h1v1h-1zM2 11h2v1h-2zM10 11h1v1h-1zM12 11h1v1h-1zM14 11h1v1h-1zM16 11h8v1h-8zM25 11h1v1h-1zM28 11h1v1h-1zM33 11h3v1h-3zM2 12h3v1h-3zM6 12h4v1h-4zM12 12h2v1h-2zM17 12h1v1h-1zM20 12h1v1h-1zM22 12h2v1h-2zM25 12h5v1h-5zM31 12h1v1h-1zM36 12h1v1h-1zM2 13h1v1h-1zM6 13h2v1h-2zM9 13h6v1h-6zM19 13h3v1h-3zM23 13h2v1h-2zM26 13h1v1h-1zM28 13h4v1h-4zM34 13h1v1h-1zM36 13h3v1h-3zM2 14h1v1h-1zM4 14h1v1h-1zM7 14h2v1h-2zM10 14h6v1h-6zM18 14h3v1h-3zM23 14h4v1h-4zM31 14h2v1h-2zM36 14h2v1h-2zM3 15h1v1h-1zM7 15h1v1h-1zM10 15h1v1h-1zM12 15h1v1h-1zM16 15h1v1h-1zM18 15h1v1h-1zM20 15h2v1h-2zM25 15h3v1h-3zM29 15h3v1h-3zM34 15h1v1h-1zM36 15h2v1h-2zM2 16h1v1h-1zM4 16h1v1h-1zM7 16h4v1h-4zM13 16h1v1h-1zM15 16h2v1h-2zM20 16h8v1h-8zM29 16h1v1h-1zM31 16h1v1h-1zM33 16h4v1h-4zM2 17h3v1h-3zM7 17h1v1h-1zM10 17h1v1h-1zM12 17h1v1h-1zM14 17h2v1h-2zM18 17h3v1h-3zM22 17h2v1h-2zM26 17h1v1h-1zM28 17h2v1h-2zM31 17h2v1h-2zM36 17h1v1h-1zM38 17h1v1h-1zM2 18h1v1h-1zM5 18h1v1h-1zM8 18h2v1h-2zM11 18h2v1h-2zM15 18h2v1h-2zM20 18h1v1h-1zM22 18h1v1h-1zM29 18h1v1h-1zM31 18h2v1h-2zM35 18h2v1h-2zM38 18h1v1h-1zM2 19h1v1h-1zM5 19h1v1h-1zM7 19h1v1h-1zM11 19h4v1h-4zM17 19h2v1h-2zM23 19h2v1h-2zM26 19h1v1h-1zM28 19h2v1h-2zM34 19h2v1h-2zM3 20h2v1h-2zM8 20h1v1h-1zM10 20h1v1h-1zM13 20h1v1h-1zM16 20h2v1h-2zM19 20h1v1h-1zM21 20h6v1h-6zM28 20h2v1h-2zM31 20h1v1h-1zM33 20h4v1h-4zM4 21h3v1h-3zM9 21h2v1h-2zM14 21h1v1h-1zM23 21h1v1h-1zM25 21h1v1h-1zM29 21h1v1h-1zM31 21h3v1h-3zM36 21h3v1h-3zM8 22h1v1h-1zM11 22h1v1h-1zM14 22h1v1h-1zM16 22h4v1h-4zM21 22h4v1h-4zM29 22h1v1h-1zM31 22h2v1h-2zM36 22h1v1h-1zM38 22h1v1h-1zM2 23h4v1h-4zM11 23h1v1h-1zM13 23h1v1h-1zM15 23h1v1h-1zM18 23h1v1h-1zM20 23h1v1h-1zM25 23h1v1h-1zM27 23h3v1h-3zM34 23h4v1h-4zM2 24h2v1h-2zM5 24h2v1h-2zM8 24h1v1h-1zM10 24h1v1h-1zM12 24h3v1h-3zM16 24h2v1h-2zM20 24h1v1h-1zM23 24h4v1h-4zM29 24h2v1h-2zM32 24h1v1h-1zM36 24h1v1h-1zM2 25h1v1h-1zM4 25h3v1h-3zM11 25h2v1h-2zM14 25h3v1h-3zM18 25h3v1h-3zM23 25h1v1h-1zM28 25h1v1h-1zM30 25h1v1h-1zM32 25h2v1h-2zM36 25h3v1h-3zM3 26h2v1h-2zM6 26h3v1h-3zM11 26h1v1h-1zM13 26h2v1h-2zM19 26h1v1h-1zM22 26h3v1h-3zM26 26h4v1h-4zM32 26h2v1h-2zM36 26h2v1h-2zM2 27h2v1h-2zM6 27h2v1h-2zM9 27h2v1h-2zM12 27h1v1h-1zM14 27h3v1h-3zM21 27h1v1h-1zM25 27h3v1h-3zM30 27h1v1h-1zM32 27h1v1h-1zM34 27h1v1h-1zM4 28h1v1h-1zM6 28h1v1h-1zM8 28h2v1h-2zM11 28h1v1h-1zM13 28h5v1h-5zM19 28h1v1h-1zM21 28h8v1h-8zM30 28h2v1h-2zM33 28h2v1h-2zM36 28h2v1h-2zM4 29h1v1h-1zM6 29h2v1h-2zM11 29h1v1h-1zM13 29h5v1h-5zM21 29h3v1h-3zM25 29h2v1h-2zM28 29h1v1h-1zM32 29h1v1h-1zM36 29h3v1h-3zM2 30h2v1h-2zM5 30h1v1h-1zM7 30h2v1h-2zM11 30h2v1h-2zM17 30h2v1h-2zM21 30h1v1h-1zM23 30h3v1h-3zM29 30h6v1h-6zM36 30h1v1h-1zM38 30h1v1h-1zM10 31h1v1h-1zM12 31h1v1h-1zM14 31h2v1h-2zM17 31h1v1h-1zM19 31h7v1h-7zM30 31h1v1h-1zM34 31h2v1h-2zM37 31h1v1h-1zM2 32h7v1h-7zM11 32h2v1h-2zM15 32h3v1h-3zM19 32h2v1h-2zM22 32h1v1h-1zM25 32h4v1h-4zM30 32h1v1h-1zM32 32h1v1h-1zM34 32h3v1h-3zM2 33h1v1h-1zM8 33h1v1h-1zM13 33h1v1h-1zM16 33h2v1h-2zM19 33h1v1h-1zM22 33h1v1h-1zM24 33h1v1h-1zM26 33h1v1h-1zM28 33h1v1h-1zM30 33h1v1h-1zM34 33h1v1h-1zM36 33h3v1h-3zM2 34h1v1h-1zM4 34h3v1h-3zM8 34h1v1h-1zM10 34h2v1h-2zM13 34h3v1h-3zM19 34h1v1h-1zM24 34h1v1h-1zM26 34h1v1h-1zM30 34h8v1h-8zM2 35h1v1h-1zM4 35h3v1h-3zM8 35h1v1h-1zM11 35h1v1h-1zM15 35h2v1h-2zM19 35h4v1h-4zM27 35h4v1h-4zM32 35h2v1h-2zM37 35h1v1h-1zM2 36h1v1h-1zM4 36h3v1h-3zM8 36h1v1h-1zM11 36h1v1h-1zM14 36h1v1h-1zM19 36h1v1h-1zM22 36h1v1h-1zM24 36h1v1h-1zM28 36h1v1h-1zM32 36h2v1h-2zM36 36h2v1h-2zM2 37h1v1h-1zM8 37h1v1h-1zM10 37h2v1h-2zM13 37h2v1h-2zM17 37h2v1h-2zM23 37h2v1h-2zM26 37h1v1h-1zM28 37h2v1h-2zM31 37h1v1h-1zM33 37h1v1h-1zM36 37h2v1h-2zM2 38h7v1h-7zM11 38h1v1h-1zM14 38h1v1h-1zM17 38h7v1h-7zM25 38h2v1h-2zM29 38h1v1h-1zM31 38h3v1h-3zM36 38h3v1h-3z"/></symbol><linearGradient id="cicGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f59e0b"/><stop offset=".5" stop-color="#ef5a3c"/><stop offset="1" stop-color="#e11d5a"/></linearGradient><symbol id="qrCic" viewBox="0 0 37 37"><rect width="37" height="37" fill="#fff"/><path fill="url(#cicGrad)" d="M2 2h7v1h-7zM12 2h2v1h-2zM15 2h7v1h-7zM25 2h1v1h-1zM28 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM10 3h2v1h-2zM13 3h2v1h-2zM20 3h1v1h-1zM23 3h4v1h-4zM28 3h1v1h-1zM34 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM10 4h2v1h-2zM14 4h2v1h-2zM17 4h1v1h-1zM19 4h1v1h-1zM21 4h4v1h-4zM28 4h1v1h-1zM30 4h3v1h-3zM34 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM11 5h1v1h-1zM15 5h1v1h-1zM17 5h1v1h-1zM21 5h6v1h-6zM28 5h1v1h-1zM30 5h3v1h-3zM34 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM11 6h1v1h-1zM15 6h2v1h-2zM18 6h1v1h-1zM22 6h2v1h-2zM25 6h1v1h-1zM28 6h1v1h-1zM30 6h3v1h-3zM34 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM11 7h1v1h-1zM14 7h10v1h-10zM26 7h1v1h-1zM28 7h1v1h-1zM34 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h1v1h-1zM22 8h1v1h-1zM24 8h1v1h-1zM26 8h1v1h-1zM28 8h7v1h-7zM11 9h1v1h-1zM13 9h2v1h-2zM18 9h2v1h-2zM22 9h1v1h-1zM26 9h1v1h-1zM3 10h3v1h-3zM7 10h2v1h-2zM12 10h1v1h-1zM15 10h3v1h-3zM19 10h3v1h-3zM23 10h1v1h-1zM25 10h1v1h-1zM32 10h2v1h-2zM5 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2zM14 11h1v1h-1zM16 11h3v1h-3zM20 11h6v1h-6zM28 11h2v1h-2zM31 11h2v1h-2zM34 11h1v1h-1zM5 12h5v1h-5zM12 12h2v1h-2zM15 12h2v1h-2zM18 12h2v1h-2zM25 12h1v1h-1zM27 12h5v1h-5zM34 12h1v1h-1zM2 13h1v1h-1zM6 13h1v1h-1zM9 13h1v1h-1zM12 13h2v1h-2zM16 13h3v1h-3zM20 13h2v1h-2zM25 13h2v1h-2zM28 13h2v1h-2zM31 13h1v1h-1zM2 14h1v1h-1zM6 14h1v1h-1zM8 14h3v1h-3zM12 14h1v1h-1zM15 14h4v1h-4zM20 14h1v1h-1zM23 14h1v1h-1zM25 14h3v1h-3zM29 14h3v1h-3zM33 14h2v1h-2zM4 15h2v1h-2zM7 15h1v1h-1zM9 15h1v1h-1zM11 15h4v1h-4zM16 15h1v1h-1zM18 15h3v1h-3zM24 15h1v1h-1zM29 15h1v1h-1zM32 15h2v1h-2zM4 16h5v1h-5zM10 16h1v1h-1zM12 16h1v1h-1zM14 16h1v1h-1zM17 16h2v1h-2zM20 16h1v1h-1zM23 16h2v1h-2zM26 16h1v1h-1zM28 16h1v1h-1zM31 16h2v1h-2zM2 17h4v1h-4zM9 17h1v1h-1zM11 17h1v1h-1zM18 17h2v1h-2zM21 17h5v1h-5zM27 17h2v1h-2zM30 17h3v1h-3zM3 18h1v1h-1zM7 18h2v1h-2zM11 18h1v1h-1zM13 18h2v1h-2zM16 18h1v1h-1zM18 18h2v1h-2zM21 18h4v1h-4zM27 18h2v1h-2zM30 18h3v1h-3zM2 19h1v1h-1zM5 19h3v1h-3zM10 19h3v1h-3zM19 19h1v1h-1zM22 19h2v1h-2zM25 19h1v1h-1zM28 19h1v1h-1zM30 19h2v1h-2zM33 19h2v1h-2zM3 20h1v1h-1zM5 20h4v1h-4zM10 20h1v1h-1zM13 20h2v1h-2zM17 20h2v1h-2zM20 20h1v1h-1zM24 20h1v1h-1zM27 20h1v1h-1zM29 20h2v1h-2zM32 20h2v1h-2zM2 21h1v1h-1zM4 21h4v1h-4zM9 21h1v1h-1zM11 21h1v1h-1zM13 21h5v1h-5zM19 21h1v1h-1zM21 21h3v1h-3zM26 21h3v1h-3zM30 21h1v1h-1zM33 21h1v1h-1zM2 22h2v1h-2zM7 22h4v1h-4zM16 22h1v1h-1zM19 22h4v1h-4zM31 22h2v1h-2zM34 22h1v1h-1zM2 23h2v1h-2zM5 23h3v1h-3zM9 23h1v1h-1zM11 23h2v1h-2zM17 23h1v1h-1zM20 23h1v1h-1zM23 23h1v1h-1zM25 23h1v1h-1zM28 23h1v1h-1zM32 23h1v1h-1zM34 23h1v1h-1zM6 24h3v1h-3zM13 24h1v1h-1zM15 24h2v1h-2zM20 24h1v1h-1zM24 24h7v1h-7zM32 24h3v1h-3zM3 25h1v1h-1zM5 25h1v1h-1zM9 25h2v1h-2zM13 25h1v1h-1zM20 25h2v1h-2zM24 25h2v1h-2zM28 25h1v1h-1zM30 25h2v1h-2zM33 25h1v1h-1zM2 26h1v1h-1zM4 26h2v1h-2zM8 26h3v1h-3zM13 26h1v1h-1zM15 26h1v1h-1zM17 26h2v1h-2zM22 26h1v1h-1zM24 26h7v1h-7zM33 26h1v1h-1zM10 27h1v1h-1zM13 27h3v1h-3zM18 27h1v1h-1zM21 27h1v1h-1zM26 27h1v1h-1zM30 27h2v1h-2zM2 28h7v1h-7zM11 28h4v1h-4zM16 28h1v1h-1zM20 28h3v1h-3zM24 28h3v1h-3zM28 28h1v1h-1zM30 28h1v1h-1zM2 29h1v1h-1zM8 29h1v1h-1zM10 29h1v1h-1zM13 29h1v1h-1zM15 29h3v1h-3zM21 29h6v1h-6zM30 29h5v1h-5zM2 30h1v1h-1zM4 30h3v1h-3zM8 30h1v1h-1zM11 30h1v1h-1zM13 30h2v1h-2zM16 30h4v1h-4zM22 30h1v1h-1zM25 30h6v1h-6zM32 30h1v1h-1zM34 30h1v1h-1zM2 31h1v1h-1zM4 31h3v1h-3zM8 31h1v1h-1zM10 31h1v1h-1zM14 31h1v1h-1zM16 31h2v1h-2zM21 31h2v1h-2zM25 31h2v1h-2zM29 31h1v1h-1zM32 31h3v1h-3zM2 32h1v1h-1zM4 32h3v1h-3zM8 32h1v1h-1zM10 32h1v1h-1zM12 32h4v1h-4zM17 32h2v1h-2zM20 32h2v1h-2zM23 32h1v1h-1zM25 32h5v1h-5zM31 32h2v1h-2zM2 33h1v1h-1zM8 33h1v1h-1zM10 33h1v1h-1zM12 33h1v1h-1zM16 33h4v1h-4zM21 33h1v1h-1zM24 33h4v1h-4zM29 33h2v1h-2zM34 33h1v1h-1zM2 34h7v1h-7zM12 34h2v1h-2zM15 34h2v1h-2zM20 34h1v1h-1zM23 34h1v1h-1zM25 34h1v1h-1zM27 34h2v1h-2zM30 34h1v1h-1zM32 34h1v1h-1z"/></symbol></defs></svg>
 
 <header class="hero">
   <div class="particles" aria-hidden="true">
@@ -112,6 +136,7 @@ dialog::backdrop{background:rgba(11,42,60,.6);backdrop-filter:blur(3px)}
     <div class="hero-actions">
       <a class="btn btn-coral" href="#colabora">Quiero colaborar</a>
       <a class="btn btn-ghost" href="#laboratorio">Conoce el laboratorio</a>
+      <a class="btn btn-ghost" href="#trabajo">¿Qué investigo?</a>
     </div>
   </div>
   <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C 240 10 480 90 720 50 C 960 10 1200 80 1440 40 L1440 90 L0 90 Z" fill="#f3f7f8"/></svg>
@@ -129,6 +154,63 @@ dialog::backdrop{background:rgba(11,42,60,.6);backdrop-filter:blur(3px)}
     </div>
   </div>
 
+  <section id="trabajo">
+    <div class="wrap">
+      <div class="card paper">
+        <p class="eyebrow">¿Qué investigo?</p>
+        <span class="badge">Resumen presentado en SOMICH 2026</span>
+        <h2>Efecto en las comunidades microbianas del tracto gastrointestinal en <i>Salmo salar</i> impactadas por MPs</h2>
+        <p class="authors">María Almonacid<sup>1,2</sup>, Sandra Marín<sup>1,3</sup>, Cristina Vergara<sup>2</sup>, María Paz Durán<sup>2</sup>, Patricia Águila<sup>1,2</sup></p>
+        <ol class="affil">
+          <li><sup>1</sup>Instituto de Acuicultura y Medio Ambiente, Programa de Doctorado en Ciencias de la Acuicultura, Universidad Austral de Chile, Puerto Montt, Chile.</li>
+          <li><sup>2</sup>Escuela de Tecnología Médica, Laboratorio de Microbiología Molecular, Universidad Austral de Chile, Sede Puerto Montt, Chile.</li>
+          <li><sup>3</sup>Instituto de Acuicultura y Medio Ambiente, Laboratorio de Interacciones Ecológicas, Universidad Austral de Chile, Puerto Montt, Chile.</li>
+        </ol>
+        <div class="abstract">
+          <p>Los microplásticos (MPs) representan una problemática para los ecosistemas acuáticos por su acumulación en el tracto gastrointestinal (TGI) en especies de interés comercial, provocando bloqueo intestinal, daño oxidativo por incremento de ROS y posibles alteraciones del microbioma intestinal tras exposición a MPs. La detección de estos en el ecosistema marino de la Patagonia chilena plantea la necesidad urgente de evaluar sus efectos en especies acuícolas, como salmónidos, dada sus potenciales repercusiones productivas y sanitarias para el cultivo.</p>
+          <details class="more">
+            <summary>Leer resumen completo</summary>
+            <p>Se utilizaron 239 ejemplares de <i>Salmo salar</i> (100 ± 150 g), provenientes de Región de Los Lagos, mantenidos en sistemas de flujo abierto y distribuidos aleatoriamente, tres peces por acuario (n=63; 21 acuarios de 58,5 L; densidad 10 kg/m³), bajo temperatura controlada (11,5 ± 2 °C) y oxigenación (&gt;90% saturación), con monitoreo diario del bienestar animal mediante supervisión del nado, alimentación, comportamiento espontaneo, aletas y coloración. Durante 46 días fueron alimentados con pellets comerciales con recubrimiento al vacío de cuatro tratamientos: C-, control vehículo aceite oxidado, y dietas con 200 mg/kg de MPs de polipropileno (MPs-PP) y polietileno (MPs-PE) (150–250 μm). No se registró hipoxia ni estrés térmico, y el único efecto conductual asociado a los tratamientos fue una menor respuesta alimentaria respecto al control.</p>
+            <p>Estos resultados sustentan la base experimental para determinar cómo la ingesta de MPs-PP y MPs-PE modifica la composición de la comunidad microbiana intestinal en <i>S. salar</i>. Se espera un aumento relativo de grupos potencialmente patógenos (Proteobacteria, Tenericutes) y una disminución de comensales asociados a la homeostasis intestinal (Firmicutes, Bacteroidetes), reflejando disbiosis inducida por MPs. Identificar estas alteraciones es clave para comprender los mecanismos de estrés oxidativo, inflamación y daño histológico, para evaluar riesgos sanitarios y productivos en la salmonicultura expuesta a contaminación plástica.</p>
+          </details>
+        </div>
+        <div class="chips"><b>Palabras clave:</b><span class="chip">Microplásticos</span><span class="chip">Microbioma intestinal</span><span class="chip">Salmónidos</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="referencias" style="padding-top:20px">
+    <div class="wrap">
+      <div class="card refs">
+        <p class="eyebrow">Bibliografía del póster</p>
+        <h2>Referencias</h2>
+        <details class="more">
+          <summary>Ver las 18 referencias</summary>
+          <ol>
+          <li>Aguila, P., González, M., Maldonado, J. E., Miranda, R., Zhang, L., González-Stegmaier, R., Rojas, L. A., &amp; Gaete, A. (2022). Associations between bacterial communities and microplastics from surface seawater of the Northern Patagonian area of Chile. Environmental Pollution, 306, 119313. <a href="https://doi.org/10.1016/j.envpol.2022.119313" target="_blank" rel="noopener">https://doi.org/10.1016/j.envpol.2022.119313</a></li>
+          <li>FAO. (2018). El estado mundial de la pesca y la acuicultura 2018. Cumplir los objetivos de desarrollo sostenible. Organización de las Naciones Unidas para la Alimentación y la Agricultura.</li>
+          <li>Fogarty, C., Burgess, C. M., Cotter, P. D., Cabrera-Rubio, R., Whyte, P., Smyth, C., &amp; Bolton, D. J. (2019). Diversity and composition of the gut microbiota of Atlantic salmon (<i>Salmo salar</i>) farmed in Irish waters. Journal of Applied Microbiology, 127(3), 648–657. <a href="https://doi.org/10.1111/jam.14291" target="_blank" rel="noopener">https://doi.org/10.1111/jam.14291</a></li>
+          <li>Hodkovicova, N., Hollerova, A., Gebauer, J., Crhanova, M., Stastny, K., Svobodova, Z., &amp; Faldyna, M. (2026). Microplastic-induced changes in the rainbow trout gut: Insights from transcriptomic, proteomic, and microbial approaches. Veterinarni Medicina, 71(8), 295–309. <a href="https://doi.org/10.17221/85/2025-VETMED" target="_blank" rel="noopener">https://doi.org/10.17221/85/2025-VETMED</a></li>
+          <li>Jia, X., Liu, Y., He, Y., Yu, H., Liu, Y., Shen, Y., Xu, X., &amp; Li, J. (2024). Exposure to microplastics induces lower survival, oxidative stress, disordered microbiota and altered metabolism in the intestines of grass carp (<i>Ctenopharyngodon idella</i>). Aquaculture and Fisheries, 9, 785–794. <a href="https://doi.org/10.1016/j.aaf.2022.09.004" target="_blank" rel="noopener">https://doi.org/10.1016/j.aaf.2022.09.004</a></li>
+          <li>Jung, M. R., Horgen, F. D., Orski, S. V., Rodriguez C., V., Beers, K. L., Balazs, G. H., Jones, T. T., Work, T. M., Brignac, K. C., Royer, S. J., Hyrenbach, K. D., Jensen, B. A., &amp; Lynch, J. M. (2018). Validation of ATR FT-IR to identify polymers of plastic marine debris, including those ingested by marine organisms. Marine Pollution Bulletin, 127, 704–716. <a href="https://doi.org/10.1016/j.marpolbul.2017.12.061" target="_blank" rel="noopener">https://doi.org/10.1016/j.marpolbul.2017.12.061</a></li>
+          <li>Kelly, E. R. M., Trujillo, J. E., Setiawan, A., Pether, S., Burritt, D., &amp; Allan, B. J. M. (2023). Investigating the impacts of biofouled marine plastic debris on the olfactory behaviour of juvenile yellowtail kingfish (<i>Seriola lalandi</i>). Marine Pollution Bulletin, 192, 115079. <a href="https://doi.org/10.1016/j.marpolbul.2023.115079" target="_blank" rel="noopener">https://doi.org/10.1016/j.marpolbul.2023.115079</a></li>
+          <li>Liu, M.-J., Guo, H.-Y., Gao, J., Zhu, K.-C., Guo, L., Liu, B.-S., Zhang, N., Jiang, S.-G., &amp; Zhang, D.-C. (2023). Characteristics of microplastic pollution in golden pompano (<i>Trachinotus ovatus</i>) aquaculture areas and the relationship between colonized-microbiota on microplastics and intestinal microflora. Science of the Total Environment, 856, 159180. <a href="https://doi.org/10.1016/j.scitotenv.2022.159180" target="_blank" rel="noopener">https://doi.org/10.1016/j.scitotenv.2022.159180</a></li>
+          <li>Lopes, C., Fernández-González, V., Muniategui-Lorenzo, S., Caetano, M., &amp; Raimundo, J. (2022). Improved methodology for microplastic extraction from gastrointestinal tracts of fat fish species. Marine Pollution Bulletin, 181, 113911. <a href="https://doi.org/10.1016/j.marpolbul.2022.113911" target="_blank" rel="noopener">https://doi.org/10.1016/j.marpolbul.2022.113911</a></li>
+          <li>Miao, C., Zhang, J., Jin, R., Li, T., Zhao, Y., &amp; Shen, M. (2023). Microplastics in aquaculture systems: Occurrence, ecological threats and control strategies. Chemosphere, 340, 139924. <a href="https://doi.org/10.1016/j.chemosphere.2023.139924" target="_blank" rel="noopener">https://doi.org/10.1016/j.chemosphere.2023.139924</a></li>
+          <li>Pozo, K., Gomez, V., Torres, M., Vera, L., Nuñez, D., Oyarzún, P., Mendoza, G., Clarke, B., Fossi, M. C., Baini, M., Přibylová, P., &amp; Klánová, J. (2019). Presence and characterization of microplastics in fish of commercial importance from the Biobío region in central Chile. Marine Pollution Bulletin, 140, 315–319. <a href="https://doi.org/10.1016/j.marpolbul.2019.01.025" target="_blank" rel="noopener">https://doi.org/10.1016/j.marpolbul.2019.01.025</a></li>
+          <li>Song, K., Wang, R., Yang, G., Xie, S., Chen, Y., Yang, F., Huang, W., Zhang, T., &amp; Feng, Z. (2023). Pollution concerns in mariculture water and cultured economical bivalves: Occurrence of microplastics under different aquaculture modes. Journal of Cleaner Production, 406, 136913. <a href="https://doi.org/10.1016/j.jclepro.2023.136913" target="_blank" rel="noopener">https://doi.org/10.1016/j.jclepro.2023.136913</a></li>
+          <li>Tolas, I., Zhou, Z., Zhang, Z., Teame, T., Olsen, R. E., Ringø, E., &amp; Rønnestad, I. (2025). A fishy gut feeling – current knowledge on gut microbiota in teleosts. Frontiers in Marine Science, 11, 1495373. <a href="https://doi.org/10.3389/fmars.2024.1495373" target="_blank" rel="noopener">https://doi.org/10.3389/fmars.2024.1495373</a></li>
+          <li>Varshney, S., Kögel, T., Ørnsrud, R., Berntssen, M. H. G., Refosco, A., Gjerde, J., Bienfait, A. M., Ali, A., Lie, K. K., &amp; Olsvik, P. A. (2025). Toxicological impact of dietary exposure to polypropylene microplastics in Atlantic salmon (<i>Salmo salar</i>). Science of the Total Environment, 1004, 180770. <a href="https://doi.org/10.1016/j.scitotenv.2025.180770" target="_blank" rel="noopener">https://doi.org/10.1016/j.scitotenv.2025.180770</a></li>
+          <li>Villasante, A., Ramírez, C., Rodríguez, H., Dantagnan, P., Hernández, A., Figueroa, E., &amp; Romero, J. (2022). Dietary carbohydrate-to-protein ratio influences growth performance, hepatic health and dynamic of gut microbiota in Atlantic salmon (<i>Salmo salar</i>). Animal Nutrition, 10, 261–279. <a href="https://doi.org/10.1016/j.aninu.2022.04.003" target="_blank" rel="noopener">https://doi.org/10.1016/j.aninu.2022.04.003</a></li>
+          <li>Viršek, M. K., Lovšin, M. N., Koren, Š., Kržan, A., &amp; Peterlin, M. (2017). Microplastics as a vector for the transport of the bacterial fish pathogen species <i>Aeromonas salmonicida</i>. Marine Pollution Bulletin, 125(1–2), 301–309. <a href="https://doi.org/10.1016/j.marpolbul.2017.08.024" target="_blank" rel="noopener">https://doi.org/10.1016/j.marpolbul.2017.08.024</a></li>
+          <li>Yu, R.-S., Yang, Y.-F., &amp; Singh, S. (2023). Global analysis of marine plastics and implications of control measure strategies. Frontiers in Marine Science, 10, 1305091. <a href="https://doi.org/10.3389/fmars.2023.1305091" target="_blank" rel="noopener">https://doi.org/10.3389/fmars.2023.1305091</a></li>
+          <li>Yuan, Y., Sepúlveda, M. S., Bi, B., Huang, Y., Kong, L., Yan, H., &amp; Gao, Y. (2023). Acute polyethylene microplastic (PE-MPs) exposure activates the intestinal mucosal immune network pathway in adult zebrafish (<i>Danio rerio</i>). Chemosphere, 311, 137048. <a href="https://doi.org/10.1016/j.chemosphere.2022.137048" target="_blank" rel="noopener">https://doi.org/10.1016/j.chemosphere.2022.137048</a></li>
+          </ol>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <section id="colabora">
     <div class="wrap">
       <p class="eyebrow">Cómo apoyar</p>
@@ -143,6 +225,10 @@ dialog::backdrop{background:rgba(11,42,60,.6);backdrop-filter:blur(3px)}
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
               <span>Ir a CIC Ngen Ko<small>www.cicngenko.cl</small></span>
             </a>
+            <button class="btn btn-cic btn-block" type="button" data-open="cicModal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              <span>Instagram de CIC Ngen Ko<small>@cicngenko</small></span>
+            </button>
           </div>
         </div>
         <div class="card feature">
@@ -180,7 +266,7 @@ dialog::backdrop{background:rgba(11,42,60,.6);backdrop-filter:blur(3px)}
           <h2>Laboratorio de Microbiología Molecular</h2>
           <p class="who">Dirigido por la <b>Dra. Patricia Águila</b>, profesora patrocinante de esta tesis. Sigue nuestro trabajo en Instagram.</p>
           <div class="stack" style="max-width:380px">
-            <button class="btn btn-ig btn-block" type="button" id="openIg">
+            <button class="btn btn-ig btn-block" type="button" data-open="igModal">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
               <span>Ver código QR de Instagram<small>@lab.micromolecular.uach</small></span>
             </button>
@@ -198,6 +284,7 @@ dialog::backdrop{background:rgba(11,42,60,.6);backdrop-filter:blur(3px)}
     </div>
   </section>
 
+
   <div class="wrap thanks">
     <h2>¡Muchas gracias!</h2>
     <p>Cada aporte acerca esta investigación a responder cómo los microplásticos afectan a los peces.</p>
@@ -208,7 +295,7 @@ dialog::backdrop{background:rgba(11,42,60,.6);backdrop-filter:blur(3px)}
 
 <dialog id="igModal" aria-labelledby="igTitle">
   <div class="modal">
-    <button class="close" type="button" id="closeIg" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    <button class="close" type="button" data-close aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
     <h3 id="igTitle">Laboratorio de Microbiología Molecular</h3>
     <p>Escanea con tu cámara o toca el botón</p>
     <svg class="qr" viewBox="0 0 41 41" role="img" aria-label="Código QR del Instagram @lab.micromolecular.uach"><use href="#qrIg"/></svg>
@@ -217,17 +304,30 @@ dialog::backdrop{background:rgba(11,42,60,.6);backdrop-filter:blur(3px)}
   </div>
 </dialog>
 
+<dialog id="cicModal" aria-labelledby="cicTitle">
+  <div class="modal">
+    <button class="close" type="button" data-close aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    <h3 id="cicTitle">CIC Ngen Ko</h3>
+    <p>Escanea con tu cámara o toca el botón</p>
+    <svg class="qr cic" viewBox="0 0 37 37" role="img" aria-label="Código QR del Instagram @cicngenko"><use href="#qrCic"/></svg>
+    <p class="handle cic" style="margin-bottom:14px">@cicngenko</p>
+    <a class="btn btn-cic" href="https://www.instagram.com/cicngenko/">Abrir Instagram</a>
+  </div>
+</dialog>
+
 <script>
 (function(){
-  var dlg=document.getElementById('igModal');
-  var openBtn=document.getElementById('openIg');
-  var closeBtn=document.getElementById('closeIg');
-  openBtn.addEventListener('click',function(){
-    if(typeof dlg.showModal==='function'){dlg.showModal();}
-    else{window.location.href='https://www.instagram.com/lab.micromolecular.uach/';}
+  var links={igModal:'https://www.instagram.com/lab.micromolecular.uach/',cicModal:'https://www.instagram.com/cicngenko/'};
+  document.querySelectorAll('[data-open]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var id=b.getAttribute('data-open'),d=document.getElementById(id);
+      if(d&&typeof d.showModal==='function'){d.showModal();}else{window.location.href=links[id];}
+    });
   });
-  closeBtn.addEventListener('click',function(){dlg.close();});
-  dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close();});
+  document.querySelectorAll('dialog').forEach(function(d){
+    d.querySelector('[data-close]').addEventListener('click',function(){d.close();});
+    d.addEventListener('click',function(e){if(e.target===d)d.close();});
+  });
 })();
 </script>
 </body>
